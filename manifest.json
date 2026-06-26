@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "idk yet",
+  "version": "1.0",
+  "description": "smth cool",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": ""
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
